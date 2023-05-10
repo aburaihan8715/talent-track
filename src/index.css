@@ -57,3 +57,41 @@ img{
 /* *************************
 reset css end
 *************************** */
+
+
+/* *************************
+reusable classes start
+*************************** */
+.heading_primary{
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: #555;
+
+}
+.text_bright{
+  color: #818EFE;
+}
+.primary_p{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #555;
+
+}
+.btn_full,
+.btn_full:link,
+.btn_full:visited{
+  background-color: #818EFE;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn_full:active,
+.btn_full:hover{
+  background-color: #5461dd;
+  color: #fff;
+}
+
+/* *************************
+reusable classes end
+*************************** */

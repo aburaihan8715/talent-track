@@ -4,11 +4,11 @@ import bannerImg from "../../../assets/images/others/banner1.png";
 
 const Banner = () => {
   return (
-    <section>
+    <section className="banner_area">
       <div className="container">
         <div className="row">
           <div className="col-md-6 mb-4 mb-md-0">
-            <div className="border banner_text_box">
+            <div className="banner_text_box">
               <h1 className="heading_primary mb-5">
                 One Step
                 <br />
@@ -27,7 +27,7 @@ const Banner = () => {
           </div>
 
           <div className="col-md-6">
-            <div className="border banner_img_box">
+            <div className="banner_img_box">
               <img className="banner_img" src={bannerImg} alt="banner photo" />
             </div>
           </div>
