@@ -13,6 +13,7 @@
 - dark variants
 #f2f4ff
 #eeeff5
+#828181
 
 - bg variants
 
@@ -108,7 +109,12 @@ reusable classes start
   font-size: 1.8rem;
   font-weight: 400;
   color: #555;
+}
 
+.secondary_p{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #828181;
 }
 .btn_full,
 .btn_full:link,
@@ -126,6 +132,44 @@ reusable classes start
   color: #fff;
 }
 
+
+.btn_outline:link,
+.btn_outline:visited{
+  border: 1px solid #5461dd;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5461dd;
+  transition: all .3s;
+}
+
+.btn_outline:active,
+.btn_outline:hover{
+  color: #fdf2e9;
+  background-color: #5461dd;
+}
+
+.h_line{
+  width: 100%;
+  box-shadow: 0px 0px 1px 0.09px #fdf2e9;
+  margin-bottom: 6rem;
+}
+
 /* *************************
 reusable classes end
+*************************** */
+
+
+/* *************************
+media query start
+*************************** */
+
+@media(max-width:576px){
+  html{
+    font-size: 50%;
+  }
+}
+/* *************************
+media query start
 *************************** */

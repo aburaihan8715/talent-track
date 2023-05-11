@@ -1,0 +1,62 @@
+.featured_job_area {
+  margin-bottom: 8rem;
+}
+.featured_job_item {
+  border: 1px solid #fdf2e9;
+  
+  padding: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  border-radius: 5px;
+}
+.company_logo_box {
+  height: 5rem;
+}
+.company_logo {
+}
+.featured_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.featured_btn_box {
+  display: flex;
+  gap: 1rem;
+}
+.featured_text_box {
+  display: flex;
+  gap: 2rem;
+}
+.featured_location_box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.location_icon_box {
+}
+.location_icon {
+  height: 3rem;
+}
+.location {
+}
+.featured_salary_box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.dolor_icon_box {
+}
+.dolor_icon {
+  height: 3rem;
+}
+.salary_text {
+}
+.salary_amount {
+}
+
+.featured_full_btn {
+  align-self: flex-start;
+}
