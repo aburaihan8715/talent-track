@@ -1,0 +1,44 @@
+
+.header_area{
+  background-color: #f2f4ff;
+}
+.navbar_brand:link,
+.navbar_brand:visited {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #5461dd;
+}
+
+.navbar_toggler_btn{
+  border: 0;
+  box-shadow: 0px 0px 1px 2px #5461dd;
+  transition: all .3s;
+
+}
+
+.navbar_toggler_btn:focus,.navbar_toggler_btn:active{
+  box-shadow: 0px 0px 1px 3px #5461dd;
+}
+.toggler_icon{
+  font-size: 1.8rem;
+}
+.nav_item {
+  /* border: 1px solid; */
+}
+.nav_link:link,
+.nav_link:visited {
+  font-size: 1.8rem;
+  display: inline-block;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: #555;
+  transition: all .3s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav_link:active,
+.nav_link:hover {
+  color: #5461dd;
+  border-bottom: 2px solid #5461dd;
+}

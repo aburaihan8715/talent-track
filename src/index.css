@@ -4,7 +4,7 @@
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 --- 02 COLORS
-- Primary: #818EFE
+- Primary: #5461dd
 - Tints:
 - Shades: 
 
@@ -53,6 +53,13 @@ img{
   max-width: 100%;
   height: auto;
 }
+a{
+  text-decoration: none;
+}
+
+ul,li{
+  list-style: none;
+}
 
 /* *************************
 reset css end
@@ -69,7 +76,7 @@ reusable classes start
 
 }
 .text_bright{
-  color: #818EFE;
+  color: #5461dd;
 }
 .primary_p{
   font-size: 1.8rem;
@@ -80,15 +87,16 @@ reusable classes start
 .btn_full,
 .btn_full:link,
 .btn_full:visited{
-  background-color: #818EFE;
+  background-color: #5461dd;
   font-size: 1.8rem;
   color: #fff;
   font-weight: 500;
+  padding: 1rem 2rem;
 }
 
 .btn_full:active,
 .btn_full:hover{
-  background-color: #5461dd;
+  background-color: #3948ca;
   color: #fff;
 }
 
