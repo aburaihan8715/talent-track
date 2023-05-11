@@ -62,6 +62,9 @@ a{
 ul,li{
   list-style: none;
 }
+ul{
+  padding: 0;
+}
 
 /* *************************
 reset css end
@@ -91,6 +94,12 @@ reusable classes start
   font-size: 2.4rem;
   font-weight: 700;
   color: #555;
+  line-height: 1.1;
+}
+.heading_quaternary{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
 }
 .text_bright{
   color: #5461dd;

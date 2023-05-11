@@ -9,10 +9,25 @@
 .primary_p.primary_p_light{
   color: #fdf2e9;
 }
-.social_icons_box{}
-.social_icon_box{}
-.social_icon{}
-.heading_quaternary{}
+.social_icons_box{
+  display: flex;
+  gap: 1rem;
+}
+.social_icon_box{
+  display: inline-block;
+  background-color: #fdf2e9;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social_icon{
+  width: 4rem;
+  height: 4rem;
+}
+
 .footer_list{
   display: flex;
   flex-direction: column;
