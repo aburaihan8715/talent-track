@@ -1,6 +1,8 @@
 
 .header_area{
   background-color: #f2f4ff;
+  padding: 2rem 0;
+  
 }
 .navbar_brand:link,
 .navbar_brand:visited {
@@ -11,10 +13,8 @@
 }
 
 .navbar_toggler_btn{
-  border: 0;
-  box-shadow: 0px 0px 1px 2px #5461dd;
+  border: 1px solid #5461dd;
   transition: all .3s;
-
 }
 
 .navbar_toggler_btn:focus,.navbar_toggler_btn:active{

@@ -11,6 +11,8 @@
 - light variants
 
 - dark variants
+#f2f4ff
+#eeeff5
 
 - bg variants
 
@@ -73,7 +75,22 @@ reusable classes start
   font-size: 5.2rem;
   font-weight: 700;
   color: #555;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
 
+.heading_secondary{
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #555;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.heading_tertiary{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #555;
 }
 .text_bright{
   color: #5461dd;

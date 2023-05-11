@@ -1,0 +1,30 @@
+.footer_area{
+  background-color: #201717;
+  padding: 8rem 0;
+  color: #fdf2e9;
+}
+.heading_tertiary.heading_tertiary_light{
+  color: #fdf2e9;
+}
+.primary_p.primary_p_light{
+  color: #fdf2e9;
+}
+.social_icons_box{}
+.social_icon_box{}
+.social_icon{}
+.heading_quaternary{}
+.footer_list{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer_link:link,
+.footer_link:visited{
+  color: #fdf2e9;
+}
+
+.h_line{
+  width: 100%;
+  box-shadow: 0px 0px 1px 0.09px #fdf2e9;
+  margin-bottom: 6rem;
+}
