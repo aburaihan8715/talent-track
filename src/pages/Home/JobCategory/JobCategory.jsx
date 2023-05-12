@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./JobCategory.css";
-// import accountImg from "../../../assets/images/icons/accounts 1.png";
 import { useState } from "react";
 
 const JobCategory = () => {
