@@ -11,6 +11,8 @@ import MainLayout from './layouts/MainLayout.jsx';
 import Home from './pages/Home/Home.jsx';
 import JobDetails from './pages/Home/JobDetails/JobDetails';
 import AppliedJobs from './pages/AppliedJobs/AppliedJobs';
+import Statistics from './pages/Statistics/Statistics';
+import Blogs from './pages/Blogs/Blogs';
 
 
 const router = createBrowserRouter([
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path:"/appliedJobs",
         element:<AppliedJobs/>
+      },
+      {
+        path:"/statistics",
+        element: <Statistics/>
+      },
+      {
+        path:"/blogs",
+        element: <Blogs/>
       }
     ]
   },

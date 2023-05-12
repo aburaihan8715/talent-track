@@ -1,6 +1,7 @@
 import React from "react";
 import "./JobDetails.css";
 import dolorIcon from "../../../assets/images/icons/Frame.png";
+import mailIcon from "../../../assets/images/icons/Frame-3.png";
 
 const JobDetails = () => {
   return (
@@ -50,16 +51,16 @@ const JobDetails = () => {
                 <hr className="h_line"></hr>
                 <div className="mt-5">
                   <div className="d-flex gap-3">
-                    <span>
-                      <img src={dolorIcon} alt="dolor icon" />{" "}
+                    <span className="icon_box">
+                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
                     </span>
                     <p>
                       <strong>Salary :</strong>100K - 150K (Per Month)
                     </p>
                   </div>
                   <div className="d-flex gap-3">
-                    <span>
-                      <img src={dolorIcon} alt="dolor icon" />{" "}
+                    <span className="icon_box">
+                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
                     </span>
 
                     <p>
@@ -72,10 +73,10 @@ const JobDetails = () => {
                   <strong>Contact Information</strong>
                 </p>
                 <hr className="h_line mt-5"></hr>
-                <div className="mt-5">
+                <div className="mt-5 d-flex flex-column gap-3">
                   <div className="d-flex gap-3">
-                    <span>
-                      <img src={dolorIcon} alt="dolor icon" />{" "}
+                    <span className="icon_box">
+                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
                     </span>
                     <p>
                       <strong>Phone :</strong>101750-00 00 00
@@ -83,8 +84,8 @@ const JobDetails = () => {
                   </div>
 
                   <div className="d-flex gap-3">
-                    <span>
-                      <img src={dolorIcon} alt="dolor icon" />{" "}
+                    <span className="icon_box">
+                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
                     </span>
                     <p>
                       <strong>Email :</strong> info@gmail.com
@@ -92,10 +93,10 @@ const JobDetails = () => {
                   </div>
 
                   <div className="d-flex gap-3">
-                    <span>
-                      <img src={dolorIcon} alt="dolor icon" />{" "}
+                    <span className="icon_box">
+                      <img className="icon flex-shrink-0" src={mailIcon} alt="dolor icon"/>{" "}
                     </span>
-                    
+
                     <p>
                       <strong>Address :</strong>Dhanmondi 32, Sukrabad Dhaka, Bangladesh
                     </p>
