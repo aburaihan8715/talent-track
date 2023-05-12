@@ -101,7 +101,7 @@ const Footer = () => {
         <div className="h_line"></div>
 
         <div className="d-md-flex justify-content-between">
-          <p>@2023 CareerHub. All Rights Reserved</p>
+          <p>&copy;2023 CareerHub. All Rights Reserved</p>
           <p className="">Powered by CareerHub</p>
         </div>
       </div>
