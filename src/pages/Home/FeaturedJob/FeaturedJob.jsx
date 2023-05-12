@@ -1,6 +1,5 @@
 import React from "react";
 import "./FeaturedJob.css";
-// import teslaLogo from "../../../assets/images/others/tesla-9 1.png";
 import locationIcon from "../../../assets/images/icons/Location Icon.png";
 import dolorIcon from "../../../assets/images/icons/Frame.png";
 
