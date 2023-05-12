@@ -10,6 +10,7 @@ import JobDetails from "./pages/Home/JobDetails/JobDetails";
 import AppliedJobs from "./pages/AppliedJobs/AppliedJobs";
 import Statistics from "./pages/Statistics/Statistics";
 import Blogs from "./pages/Blogs/Blogs";
+import NotFound from "./pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         path: "/blogs",
         element: <Blogs />,
       },
+      {
+        path:"*",
+        element: <NotFound/>
+      }
     ],
   },
 ]);
