@@ -1,8 +1,11 @@
 import React from "react";
 import "./FeaturedJob.css";
-import locationIcon from "../../../assets/images/icons/Location Icon.png";
+// import locationIcon from "../../../assets/images/icons/Location Icon.png";
 import dolorIcon from "../../../assets/images/icons/Frame.png";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot,faDollarSign } from "@fortawesome/free-solid-svg-icons";
+
 
 const FeaturedJob = ({ job }) => {
   const { _id, job_type, job_time, logo, job_title, company, location, salary } = job;
@@ -28,14 +31,16 @@ const FeaturedJob = ({ job }) => {
           <div className="featured_text_box secondary_p">
             <div className="featured_location_box">
               <span className="location_icon_box">
-                <img className="location_icon" src={locationIcon} alt="location icon" />
+              <FontAwesomeIcon icon={faLocationDot} />
+                {/* <img className="location_icon" src={locationIcon} alt="location icon" /> */}
               </span>
               <span className="location">{location}</span>
             </div>
 
             <div className="featured_salary_box">
               <span className="dolor_icon_box">
-                <img className="dolor_icon" src={dolorIcon} alt="dolor icon" />
+              <FontAwesomeIcon icon={faDollarSign} />
+                {/* <img className="dolor_icon" src={dolorIcon} alt="dolor icon" /> */}
               </span>
               <span className="salary_text">Salary :</span>
               <span className="salary_amount">{salary}</span>

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./JobDetails.css";
-import dolorIcon from "../../../assets/images/icons/Frame.png";
-import mailIcon from "../../../assets/images/icons/Frame-3.png";
 import { useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faDollarSign, faPhone, faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons";
 
 const JobDetails = () => {
   const [jobsData, setJobsData] = useState([]);
@@ -10,8 +10,8 @@ const JobDetails = () => {
 
   useEffect(() => {
     fetch("/jobs.json")
-      .then(res => res.json())
-      .then(data => setJobsData(data));
+      .then((res) => res.json())
+      .then((data) => setJobsData(data));
   }, []);
   const searchedData = jobsData?.find((jobData) => jobData._id === id);
   console.log(searchedData);
@@ -59,15 +59,16 @@ const JobDetails = () => {
                 <div className="mt-5">
                   <div className="d-flex gap-3">
                     <span className="icon_box">
-                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
+                      <FontAwesomeIcon icon={faDollarSign} />
                     </span>
                     <p>
-                      <strong>Salary :</strong>{searchedData?.salary}(Per Month)
+                      <strong>Salary :</strong>
+                      {searchedData?.salary}(Per Month)
                     </p>
                   </div>
                   <div className="d-flex gap-3">
                     <span className="icon_box">
-                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
+                      <FontAwesomeIcon icon={faCalendar} />
                     </span>
 
                     <p>
@@ -83,16 +84,17 @@ const JobDetails = () => {
                 <div className="mt-5 d-flex flex-column gap-3">
                   <div className="d-flex gap-3">
                     <span className="icon_box">
-                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
+                      <FontAwesomeIcon icon={faPhone} />
                     </span>
                     <p>
-                      <strong>Phone :</strong>{searchedData?.contact_info[1]}
+                      <strong>Phone :</strong>
+                      {searchedData?.contact_info[1]}
                     </p>
                   </div>
 
                   <div className="d-flex gap-3">
                     <span className="icon_box">
-                      <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
+                      <FontAwesomeIcon icon={faEnvelope} />
                     </span>
                     <p>
                       <strong>Email :</strong> {searchedData?.contact_info[0]}
@@ -101,11 +103,12 @@ const JobDetails = () => {
 
                   <div className="d-flex gap-3">
                     <span className="icon_box">
-                      <img className="icon flex-shrink-0" src={mailIcon} alt="dolor icon" />{" "}
+                      <FontAwesomeIcon icon={faLocationDot} />
                     </span>
 
                     <p>
-                      <strong>Address :</strong>{searchedData?.location}
+                      <strong>Address :</strong>
+                      {searchedData?.location}
                     </p>
                   </div>
                 </div>

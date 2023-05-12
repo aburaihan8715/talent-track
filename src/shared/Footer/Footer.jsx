@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import facebookIcon from "../../assets/images/icons/Frame.png";
 
+
 const Footer = () => {
   return (
     <footer className="footer_area">
@@ -103,6 +104,7 @@ const Footer = () => {
         <div className="d-md-flex justify-content-between pt-5">
           <p>&copy;2023 CareerHub. All Rights Reserved</p>
           <p className="">Powered by CareerHub</p>
+         
         </div>
       </div>
     </footer>
