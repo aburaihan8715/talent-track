@@ -3,6 +3,7 @@ import "./JobDetails.css";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faDollarSign, faPhone, faEnvelope, faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { addToDb } from "../../../utilities/fakedb";
 
 const JobDetails = () => {
   const [jobsData, setJobsData] = useState([]);
@@ -14,7 +15,11 @@ const JobDetails = () => {
       .then((data) => setJobsData(data));
   }, []);
   const searchedData = jobsData?.find((jobData) => jobData._id === id);
-  console.log(searchedData);
+
+  const applyNowHandler = (id) => {
+    addToDb(id);
+  };
+
   return (
     <section className="job_details_area">
       <div className="container">
@@ -115,7 +120,9 @@ const JobDetails = () => {
               </div>
 
               <div>
-                <button className="btn btn_full w-100">Apply Now</button>
+                <button onClick={() => applyNowHandler(searchedData?._id)} className="btn btn_full w-100">
+                  Apply Now
+                </button>
               </div>
             </div>
           </div>
