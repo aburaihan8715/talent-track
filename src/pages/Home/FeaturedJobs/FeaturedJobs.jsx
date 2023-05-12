@@ -2,8 +2,7 @@ import React from "react";
 import "./FeaturedJobs.css";
 import FeaturedJob from "../FeaturedJob/FeaturedJob";
 
-
-const FeaturedJobs = () => {
+const FeaturedJobs = ({ jobs }) => {
   return (
     <section className="featured_job_area">
       <div className="container">
@@ -17,12 +16,9 @@ const FeaturedJobs = () => {
         </div>
 
         <div className="row row-cols-1 row-cols-md-2 g-4">
-          {/* **********featured job item********* */}
-          <FeaturedJob></FeaturedJob>
-          <FeaturedJob></FeaturedJob>
-          <FeaturedJob></FeaturedJob>
-          <FeaturedJob></FeaturedJob>
-          {/* **********featured job item********* */}
+          {jobs.map((job) => (
+            <FeaturedJob key={job._id} job={job}></FeaturedJob>
+          ))}
         </div>
         <div className="row mt-5">
           <div className="col text-center">
