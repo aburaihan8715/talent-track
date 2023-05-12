@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./JobDetails.css";
 import dolorIcon from "../../../assets/images/icons/Frame.png";
 import mailIcon from "../../../assets/images/icons/Frame-3.png";
+import { useParams } from "react-router-dom";
 
 const JobDetails = () => {
+  const [jobsData, setJobsData] = useState([]);
+  const { id } = useParams();
+
+  useEffect(() => {
+    fetch("/jobs.json")
+      .then(res => res.json())
+      .then(data => setJobsData(data));
+  }, []);
+  const searchedData = jobsData?.find((jobData) => jobData._id === id);
+  console.log(searchedData);
   return (
     <section className="job_details_area">
       <div className="container">
@@ -17,28 +28,24 @@ const JobDetails = () => {
           <div className="col-md-8">
             <div>
               <p className="mb-5">
-                <strong>Job Description:</strong> A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging
-                and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of
-                the user interface.
+                <strong>Job Description:</strong> {searchedData?.job_description}
               </p>
 
               <p className="mb-5">
-                <strong>Job Responsibility:</strong> Collaborating with cross-functional teams: UI/UX designers often work closely with other teams,
-                including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical
-                requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.
+                <strong>Job Responsibility:</strong> {searchedData?.job_responsibility}
               </p>
 
               <p>
                 <strong>Educational Requirements:</strong>{" "}
               </p>
 
-              <p>Bachelor degree to complete any reputational university.</p>
+              <p>{searchedData?.education}.</p>
 
               <p>
                 <strong>Experiences:</strong>
               </p>
 
-              <p>2-3 Years in this field.</p>
+              <p>{searchedData?.experience}.</p>
             </div>
           </div>
 
@@ -55,7 +62,7 @@ const JobDetails = () => {
                       <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
                     </span>
                     <p>
-                      <strong>Salary :</strong>100K - 150K (Per Month)
+                      <strong>Salary :</strong>{searchedData?.salary}(Per Month)
                     </p>
                   </div>
                   <div className="d-flex gap-3">
@@ -64,7 +71,7 @@ const JobDetails = () => {
                     </span>
 
                     <p>
-                      <strong>Job Title :</strong> Product Designer
+                      <strong>Job Title :</strong> {searchedData?.job_title}
                     </p>
                   </div>
                 </div>
@@ -79,7 +86,7 @@ const JobDetails = () => {
                       <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
                     </span>
                     <p>
-                      <strong>Phone :</strong>101750-00 00 00
+                      <strong>Phone :</strong>{searchedData?.contact_info[1]}
                     </p>
                   </div>
 
@@ -88,17 +95,17 @@ const JobDetails = () => {
                       <img className="icon" src={dolorIcon} alt="dolor icon" />{" "}
                     </span>
                     <p>
-                      <strong>Email :</strong> info@gmail.com
+                      <strong>Email :</strong> {searchedData?.contact_info[0]}
                     </p>
                   </div>
 
                   <div className="d-flex gap-3">
                     <span className="icon_box">
-                      <img className="icon flex-shrink-0" src={mailIcon} alt="dolor icon"/>{" "}
+                      <img className="icon flex-shrink-0" src={mailIcon} alt="dolor icon" />{" "}
                     </span>
 
                     <p>
-                      <strong>Address :</strong>Dhanmondi 32, Sukrabad Dhaka, Bangladesh
+                      <strong>Address :</strong>{searchedData?.location}
                     </p>
                   </div>
                 </div>

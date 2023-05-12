@@ -5,7 +5,7 @@ import dolorIcon from "../../../assets/images/icons/Frame.png";
 import { Link } from "react-router-dom";
 
 const FeaturedJob = ({ job }) => {
-  const { job_type, job_time, logo, job_title, company, location, salary } = job;
+  const { _id, job_type, job_time, logo, job_title, company, location, salary } = job;
   return (
     <div className="col ">
       <div className="featured_job_item">
@@ -18,10 +18,10 @@ const FeaturedJob = ({ job }) => {
           <p className="secondary_p">{company}</p>
           <div className="featured_btn_box">
             <a className="btn btn_outline" href="#">
-             { job_type}
+              {job_type}
             </a>
             <a className="btn btn_outline" href="#">
-             { job_time}
+              {job_time}
             </a>
           </div>
 
@@ -42,7 +42,7 @@ const FeaturedJob = ({ job }) => {
             </div>
           </div>
 
-          <Link className="btn btn_full featured_full_btn" to="/jobDetails">
+          <Link className="btn btn_full featured_full_btn" to={`/jobDetails/${_id}`}>
             View Details
           </Link>
         </div>

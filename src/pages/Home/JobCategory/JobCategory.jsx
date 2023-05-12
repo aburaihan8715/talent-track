@@ -11,8 +11,6 @@ const JobCategory = () => {
       .then((data) => setJobCategory(data));
   }, []);
 
-  console.log(jobCategory);
-
   return (
     <section className="job_category_area">
       <div className="container">
