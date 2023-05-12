@@ -2,6 +2,7 @@ import React from "react";
 import "./FeaturedJob.css";
 import locationIcon from "../../../assets/images/icons/Location Icon.png";
 import dolorIcon from "../../../assets/images/icons/Frame.png";
+import { Link } from "react-router-dom";
 
 const FeaturedJob = ({ job }) => {
   const { job_type, job_time, logo, job_title, company, location, salary } = job;
@@ -41,9 +42,9 @@ const FeaturedJob = ({ job }) => {
             </div>
           </div>
 
-          <a className="btn btn_full featured_full_btn" href="#">
+          <Link className="btn btn_full featured_full_btn" to="/jobDetails">
             View Details
-          </a>
+          </Link>
         </div>
       </div>
     </div>
